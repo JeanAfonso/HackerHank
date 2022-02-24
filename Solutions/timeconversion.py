@@ -14,7 +14,7 @@ import sys
 #
 
 def timeConversion(s):
-    apm = s[-2:]
+    apm = s[-2:] # Comentario
     if apm == 'PM' and s[:2] !='12':
         s = str(12 + int(s[:2])) + s[2:]
     if apm == 'AM' and s[:2] == '12':
